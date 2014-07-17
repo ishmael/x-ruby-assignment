@@ -60,7 +60,7 @@ When this part is finished, we would like to be able to..
 - Click a Brand from (1) to see all products from that Brand, and see where one may buy those products (at which Retailer).
 - Click a Retailer from (2) to see all products available at that Retailer, and to see what Brand made that product.
 
-### Prices
+### (4) Prices
 
 When this part is finished, we would like to be able to see the prices of all products (3) and it's discounts - the original price and the correctly calculated price for each Retailer.
 
