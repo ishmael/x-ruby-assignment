@@ -4,7 +4,7 @@ This is a Ruby on Rails application running Rails 4.1.4 intended as a recruitmen
 
 ## Requirements
 
-- `ruby 2.1.0`
+- `ruby 2.1.x`
 - `bundler`
 
 ## Installation
@@ -24,6 +24,10 @@ The gems already added for your disposal is:
 - `awesome_print`
 
 You may add other front-end oriented gems or libraries if you please, but don't overdo it. All in all, this is a pretty standard Rails setup. Feel free to change template engine from Erb to Erubis, Haml or other if you wish.
+
+---
+
+## Before jumping in
 
 Writing Javascript to enhance the experience of the application is great, but shouldn't be the main focus of this assignment. We encourage you to write methods, helpers and clean `erb` to aid in your front-end solutions.
 
