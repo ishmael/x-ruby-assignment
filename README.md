@@ -15,7 +15,7 @@ Fork this repository, then clone and start server as seen below.
 $ git clone https://github.com/{yourGithubUser}/x-ruby-assignment.git my_directory
 $ cd my_directory
 $ bundle install
-$ rails server
+$ rails s
 ```
 
 The gems already added for your disposal is:
@@ -33,11 +33,15 @@ Writing Javascript to enhance the experience of the application is great, but sh
 
 The [Typeplate typography framework](http://typeplate.com/) is included as well as some minor typography styles for code elements - just for your convenience, you may discard them.
 
+Everyone works at different speeds and depending on how you choose to solve these assignments, the amount of work is different. Try to aim at completing this in somewhere between 2 and 6 hours. If you find yourself exceeding that it probably means you're working on non-essentials, please let us know so we can sort that out.
+
 ---
 
 ## Assignments
 
-This website should aim to display information on Brands, products and Retailer - information you can find in a mocked library (`lib/assets`) and available through a few instance variables in `home_controller.rb`. You may _not modify_ the library files (except if you see a missing method that you would like to write), but you will find some useful methods there which you might want to use.
+You are building an online store, or at least a part of it. Think of it as a site where you can browse products, see at which store you will be able to buy them and where to find the best discounts.
+
+This website should aim to display information on Brands, Retailer and products - information you can find in a mocked library (`lib/assets`) and available through a few instance variables in `home_controller.rb`. You may _not modify_ the library files (except if you see a missing method that you would like to write), but you will find some useful methods there which you might want to use.
 
 We would like to be able to use this app as follows.
 
@@ -47,11 +51,10 @@ When this part is finished, we would like to be able to see all Brands (eg. Sony
 
 - Name of Brand
 - Retailers supplying products of this Brand
-- Number of products from this Brand
 
 ### (2) Browse all _Retailers_
 
-When this part is finished, we would like to be able to access information about all Retailers (eg. Johnnys Tech Store, Carrefour).
+When this part is finished, we would like to be able to access information about all Retailers (eg. Johnnys Tech Store, MegaMart Superstore).
 
 - Name of Retailer
 - Brands available at this Retailer
@@ -66,11 +69,11 @@ When this part is finished, we would like to be able to..
 
 ### (4) Prices
 
-When this part is finished, we would like to be able to see the prices of all products (3) and it's discounts - the original price and the correctly calculated price for each Retailer.
+When this part is finished, we would like to be able to see the prices of all products (3) and it's discounts - the original price and the correctly calculated price for each Retailer. We should be able to look at a product and compare prices for that product for each retailer.
 
 In the end we should be able to..
 
-- Browse through all information easily
+- Browse through information in a way that feels natural
 - See where (at which retailer) the product I want is available
 - Deduce where we can buy a certain product at the cheapest price
 
@@ -117,6 +120,20 @@ If you have any questions or would like to raise any concerns, please [send me a
 
 -
 
+> **Q)** May I use Haml or another template engine?
+
+> **A)** Yes.
+
+-
+
+-
+
+> **Q)** May I write SCSS or Less instead of Sass?
+
+> **A)** Choose between writing indented Sass or SCSS, but do not switch to Less.
+
+-
+
 > **Q)** May I write new methods in the libraries?
 
 > **A)** Yes. Please write good comments on what they do.
@@ -132,6 +149,12 @@ If you have any questions or would like to raise any concerns, please [send me a
 > **Q)** May I make this a one-page app?
 
 > **A)** Yes sure, just keep in mind that this is not a Javascript test.
+
+-
+
+> **Q)** May I add Javascript libraries?
+
+> **A)** Yes, we'd encourage use of jQuery if you choose to write some JS.
 
 -
 

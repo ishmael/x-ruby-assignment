@@ -39,3 +39,6 @@ build/
 
 # Ignore all logfiles.
 /log/*.log
+
+# Ignore scoreboard
+/score.txt
