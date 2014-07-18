@@ -2,15 +2,15 @@ module Brands
 
   # Returns an array containing the
   # brands with the specified ID
-  def self.get_by_id(id)
+  def self.by_id(id)
     self.all.select { |itm| itm[:id] == id.to_i }
   end
 
   # Returns an array containing the
   # brands that include the retailer
   # with the specified retailer_id
-  # (Where can I buy this brand)
-  def self.get_with_retailer(retailer_id)
+  # (What brands can I find at this retailer?)
+  def self.with_retailer(retailer_id)
     self.all.select { |itm| itm[:retailers].include?(retailer_id) }
   end
 
@@ -22,7 +22,7 @@ module Brands
     with_retailers = Brands.raw.map { |brand|
       {
         :id => brand[:id],
-        :retailers => Products.get_all_from_brand(brand[:id]).map { |product|
+        :retailers => Products.all_from_brand(brand[:id]).map { |product|
           product[:retailers].map { |retailer|
             retailer[:id]
           }

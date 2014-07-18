@@ -3,11 +3,11 @@ class HomeController < ApplicationController
   end
 
   def brands
-    @brands = params[:id] ? Brands.get_by_id(params[:id]) : Brands.all
+    @brands = params[:id] ? Brands.by_id(params[:id]) : Brands.all
   end
 
   def retailers
-    @retailers = params[:id] ? Retailers.get_by_id(params[:id]) : Retailers.all
+    @retailers = params[:id] ? Retailers.by_id(params[:id]) : Retailers.all
   end
 
   def products

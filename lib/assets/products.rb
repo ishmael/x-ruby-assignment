@@ -2,20 +2,21 @@ module Products
 
   # Returns an array containing the
   # products with the specified ID
-  def self.get_by_id(id)
+  def self.by_id(id)
     self.all.select { |itm| itm[:id] == id.to_i }
   end
 
   # Returns an array containing the
   # products from a certain brand
-  def self.get_all_from_brand(brand_id)
+  # (What products are made by this brand?)
+  def self.all_from_brand(brand_id)
     self.all.select { |itm| itm[:brand] == brand_id }
   end
 
-  # Returns an array containing the
-  # products where a retailer exists with
-  # a certain ID (all products found at a retailer)
-  def self.get_all_from_retailer(retailer_id)
+  # Returns an array containing the products
+  # where a retailer exists with a certain ID
+  # (What products can I find at this retailer?)
+  def self.all_from_retailer(retailer_id)
     self.all.select { |itm| itm[:retailers].any? { |retailer| retailer[:id] == retailer_id } }
   end
 

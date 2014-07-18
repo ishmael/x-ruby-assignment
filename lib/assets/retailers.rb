@@ -2,15 +2,15 @@ module Retailers
 
   # Returns an array containing the
   # retailers with the specified ID
-  def self.get_by_id(id)
+  def self.by_id(id)
     self.all.select { |itm| itm[:id] == id.to_i }
   end
 
   # Returns the discount (number) a certain
   # retailer has for a certain brand
-  # (What is the real price after discount)
-  def self.get_discount(retailer_id, brand_id)
-    retailer = self.get_by_id(retailer_id)
+  # (What is the discount at this retailer, from this brand?)
+  def self.discount(retailer_id, brand_id)
+    retailer = self.by_id(retailer_id)
     relevant_brand = retailer[0][:promotions].select { |promotion| promotion[:brand_id] == brand_id }
 
     if relevant_brand.size > 0
@@ -18,6 +18,16 @@ module Retailers
     else
       return 0
     end
+  end
+
+  # Returns an array including all
+  # retailers supplying products from
+  # a specified brand
+  # (At which retailers can I find this brand?)
+  def self.with_brand(brand_id)
+    self.all.select { |retailer|
+      Brands.by_id(brand_id)[0][:retailers].include? retailer[:id]
+    }
   end
 
   # Returns an array of all retailers
