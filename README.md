@@ -9,8 +9,6 @@ This is a Ruby on Rails application running Rails 4.1.4 intended as a recruitmen
 
 ## Installation
 
-Fork this repository, then clone and start server as seen below.
-
 ```
 $ git clone https://github.com/{yourGithubUser}/x-ruby-assignment.git my_directory
 $ cd my_directory
@@ -34,6 +32,8 @@ Writing Javascript to enhance the experience of the application is great, but sh
 The [Typeplate typography framework](http://typeplate.com/) is included as well as some minor typography styles for code elements - just for your convenience, you may discard them.
 
 Everyone works at different speeds and depending on how you choose to solve these assignments, the amount of work is different. Try to aim at completing this in somewhere between 2 and 6 hours. If you find yourself exceeding that it probably means you're working on non-essentials, please let us know so we can sort that out.
+
+Please do not fork and publish your solutions on GitHub since this assignment will be a subject to many developers - when you're done with the assignment please zip the project and send it to us by e-mail.
 
 ---
 
